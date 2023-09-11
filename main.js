@@ -1,0 +1,1 @@
+(()=>{"use strict";function e(){const e=document.createElement("h1");return e.textContent="Tito's Tacos & Tamales",e}console.log(e()),document.querySelector("#content").appendChild(e(),function(){const e=document.createElement("img");return e.src="../src/cover.jpeg",e.alt="A picture of tortas, tacos, and tamales",e}()),console.log("Test webpack!")})();
