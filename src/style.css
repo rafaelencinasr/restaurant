@@ -1,11 +1,45 @@
-body{
+html, body{
     text-align: center;
+    height: 100%;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+#navbar {
+    background-color: aqua;
 }
 
 #content{
-    margin: 0 150px;
+    /*max-width: 50%;*/
+    margin: 0 auto;
 }
 
 img{
-    max-width: 100%;
+    max-width: 75%;
+}
+
+#contactContainer{
+    background-color: blueviolet;
+}
+
+button{
+    background-color: bisque;
+    padding: 5px 15px;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: rgb(252, 235, 214);
+}
+
+#footer {
+    background-color: red;
+    color: black;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+#footer>h4{
+    margin-bottom: 0;
 }

@@ -10,6 +10,7 @@ function coverPic(src){
 
     coverPic.src = src;
     coverPic.alt = "A picture of tortas, tacos, and tamales";
+    coverPic.classList.add("coverPic")
 
     return coverPic;
 }
