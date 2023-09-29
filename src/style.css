@@ -1,45 +1,133 @@
+/* @font-face {
+    font-family: 'Koulen';
+    src: url('./Koulen-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=League+Spartan:wght@400;700&display=swap');
+
 html, body{
     text-align: center;
     height: 100%;
-    background-color: black;
-    color: white;
     margin: 0;
+    background-image: url("./background.jpg");
+}
+
+.boxShadow{
+            /* offset-x | offset-y | blur-radius |      color */
+    box-shadow: 0px        4px         4px         rgba(0, 0, 0, 0.25);
 }
 
 #navbar {
-    background-color: aqua;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     padding: 0 10px; 
+     overflow: hidden;
+
+}
+
+#logo{
+    flex-shrink: 1;
+    font-family: 'Koulen', cursive;
+    font-size: 35px;
+    box-sizing: border-box;
+}
+
+#rightContainer{
+    display: flex;
+}
+
+#rightContainer>button{
+    font-family: 'League Spartan', sans-serif; 
+    font-size: 20px;
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 #content{
-    /*max-width: 50%;*/
-    margin: 0 auto;
+    margin: 0 170px;
 }
 
-img{
-    max-width: 75%;
+.sectionHeader{
+    font-size: 48px ;
+    font-family: 'Koulen', cursive;
+            /* offset-x | offset-y | blur-radius |      color */
+    text-shadow: 0px        4px         4px         rgba(0, 0, 0, 0.25);
 }
+
+.card{
+    height: 323px;
+    background-color: #D9D9D9;
+    border-radius: 50px ;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden
+}
+
+.picContainer{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+}
+.cardPic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+.cardInfo{
+    width: 50%;
+}
+
+.cardHeader{
+    font-family: 'Koulen', cursive;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.cardBody{
+    font-family: 'League Spartan', sans-serif;
+    margin: 0 65px; 
+    line-height: 180%;
+    text-align: justify;
+}
+
 
 #contactContainer{
     background-color: blueviolet;
 }
 
 button{
-    background-color: bisque;
+    background-color: #D9D9D9;
     padding: 5px 15px;
-    border: 1px solid black;
-}
-
-button:hover{
-    background-color: rgb(252, 235, 214);
+    /*border: 1px solid black;*/
+    border: none;
+    &:hover{
+        background-color: #e6e6e6;
+    }
 }
 
 #footer {
-    background-color: red;
+    background-color: #D9D9D9;
     color: black;
     margin-bottom: 0;
     padding: 15px;
+    font-family: 'League Spartan', sans-serif; 
 }
 
-#footer>h4{
-    margin-bottom: 0;
+.footerLink{
+    color: black;
+    text-decoration: none;
+    &:hover{
+        color: rgb(46, 46, 46);
+        text-decoration: underline;
+    }
 }

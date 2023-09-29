@@ -3,6 +3,7 @@ function contact(){
 
     const header = document.createElement("h1");
     header.textContent = "Contact Us";
+    header.classList.add("sectionHeader");
 
 
     const contactOwner = document.createElement("h4");

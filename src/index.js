@@ -1,11 +1,23 @@
- import {header, coverPic, paragraph} from './home'; 
+ //import {header, coverPic, paragraph} from './home'; 
+ import { home } from './home';
+ import { menu } from './menu';
  import { contact } from './contact';
+ import { footer } from './footer';
+ /* import { navbar } from './navbar'; */
  import './style.css';
  import cover from './cover.jpeg'
 
+/////////////////////////////////////////////
  //Navbar
 const navbar = document.createElement("div");
 navbar.id = "navbar";
+navbar.classList.add("boxShadow");
+
+const logoNavbar = document.createElement("div");
+logoNavbar.id = "logo";
+logoNavbar.textContent = "T's T&T";
+
+const rightContainer = document.createElement("div");
 
 const homeTab = document.createElement("button");
 homeTab.textContent="Home";
@@ -15,54 +27,45 @@ contactTab.textContent="Contact";
 
 const menuTab = document.createElement("button");
 menuTab.textContent="Menu";
+rightContainer.id = "rightContainer"
 
-navbar.append(homeTab, contactTab, menuTab);
+rightContainer.append(homeTab, menuTab, contactTab);
+
+navbar.append(logoNavbar, rightContainer); 
+
+////////////////////////////////////////////////
 
 const breakLine = document.createElement("br");
 
-const content = document.querySelector("#content");
-content.append(navbar);
+const container = document.querySelector("#container");
+const content = document.createElement("div");
+content.id = "content";
+content.append(home())
 
 //Tabs functionality
+
 homeTab.addEventListener("click", ()=>{
     console.log("Clicked on Home button");
-    content.textContent = '';
-    content.append(navbar);
-    content.append(header(), coverPic(cover), paragraph());  
-    content.append(footer);
+    refreshDOM(home());
 })
 
 contactTab.addEventListener("click", ()=>{
     console.log("Clicked on Contact button");
-    content.textContent = '';
-    content.append(navbar);
-    content.append(breakLine,contact());
-    content.append(footer);
+    refreshDOM(contact());
 })
 
 menuTab.addEventListener("click", ()=>{
     console.log("Clicked on Menu button");
-    content.textContent='';
-    content.append(navbar);
-    content.append(breakLine,"Menu");
-    content.append(footer);
+    refreshDOM(menu())
 })
 
-//Footer
-const footer = document.createElement("div");
-footer.id = "footer";
-
-const footerCopyright = document.createElement("h4")
-
-const repositoryLink = document.createElement("a");
-repositoryLink.href = "https://github.com/rafaelencinasr/restaurant";
-repositoryLink.target = "_blank";
-repositoryLink.textContent = "Rafael Encinas © 2023";
-
-footerCopyright.append(repositoryLink);
-footer.append(footerCopyright);
-
 //Initial render
-content.append(header(), coverPic(cover), paragraph());
-content.append(footer);
+container.append(navbar);
+container.append(content);
+container.append(footer());
 
+// Clear container, break line, insert navbar, section, and footer
+function refreshDOM(section){
+    content.textContent = '';
+    content.append(section);
+}
