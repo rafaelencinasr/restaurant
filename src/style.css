@@ -37,12 +37,20 @@ html, body{
 
 #rightContainer{
     display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }
 
-#rightContainer>button{
+#rightContainer>li{
+    list-style-type: none;
     font-family: 'League Spartan', sans-serif; 
     font-size: 20px;
+    background-color: #D9D9D9;
+    padding: 5px 15px;
+    border: none;
     &:hover{
+        background-color: #e6e6e6;
         cursor: pointer;
         text-decoration: underline;
     }
@@ -60,13 +68,17 @@ html, body{
 }
 
 .card{
-    height: 323px;
+    height: 350px;
     background-color: #D9D9D9;
     border-radius: 50px ;
     margin-bottom: 40px;
     display: flex;
     align-items: center;
     overflow: hidden
+}
+
+.reverseOrder{
+    flex-direction: row-reverse;
 }
 
 .picContainer{
@@ -100,21 +112,36 @@ html, body{
     text-align: justify;
 }
 
+.alignRight{
+    font-family: 'League Spartan', sans-serif;
+    text-align: end;
+    margin: 0;
+    margin-right: 25px;
+}
+
+.hours{
+    text-align: center;
+}
+
+.address{
+    font-weight: bold;
+}
+
 
 #contactContainer{
     background-color: blueviolet;
 }
-
+/*
 button{
     background-color: #D9D9D9;
     padding: 5px 15px;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     border: none;
     &:hover{
         background-color: #e6e6e6;
     }
 }
-
+*/
 #footer {
     background-color: #D9D9D9;
     color: black;

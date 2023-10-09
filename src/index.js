@@ -17,15 +17,15 @@ const logoNavbar = document.createElement("div");
 logoNavbar.id = "logo";
 logoNavbar.textContent = "T's T&T";
 
-const rightContainer = document.createElement("div");
+const rightContainer = document.createElement("ul");
 
-const homeTab = document.createElement("button");
+const homeTab = document.createElement("li");
 homeTab.textContent="Home";
 
-const contactTab = document.createElement("button");
+const contactTab = document.createElement("li");
 contactTab.textContent="Contact";
 
-const menuTab = document.createElement("button");
+const menuTab = document.createElement("li");
 menuTab.textContent="Menu";
 rightContainer.id = "rightContainer"
 
