@@ -77,6 +77,38 @@ html, body{
     overflow: hidden
 }
 
+.contactCard{
+    box-sizing: border-box;
+    height: 240px;
+    padding: 32px;
+    width: 440px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.contactInfoContainer{
+    margin: 0 30px;
+}
+
+.contactInformationText{
+    font-family: 'League Spartan', sans-serif;
+}
+
+.contactPicture{
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+.contactName{
+    font-family: 'Koulen', cursive;
+    font-size: 36px;
+}
 .reverseOrder{
     flex-direction: row-reverse;
 }

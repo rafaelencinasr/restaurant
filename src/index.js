@@ -43,7 +43,7 @@ content.id = "content";
 /* 
 content.append(home())
  */
-content.append(menu())
+content.append(contact())
 
 //Tabs functionality
 
