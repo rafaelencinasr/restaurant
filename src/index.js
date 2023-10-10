@@ -41,10 +41,9 @@ const breakLine = document.createElement("br");
 const container = document.querySelector("#container");
 const content = document.createElement("div");
 content.id = "content";
-/* 
+
 content.append(home())
- */
-content.append(attributions())
+
 
 //Tabs functionality
 
