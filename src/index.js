@@ -2,6 +2,7 @@
  import { home } from './home';
  import { menu } from './menu';
  import { contact } from './contact';
+ import { attributions } from './attributions';
  import { footer } from './footer';
  /* import { navbar } from './navbar'; */
  import './style.css';
@@ -43,7 +44,7 @@ content.id = "content";
 /* 
 content.append(home())
  */
-content.append(contact())
+content.append(attributions())
 
 //Tabs functionality
 
@@ -59,13 +60,19 @@ contactTab.addEventListener("click", ()=>{
 
 menuTab.addEventListener("click", ()=>{
     console.log("Clicked on Menu button");
-    refreshDOM(menu())
+    refreshDOM(menu());
 })
 
 //Initial render
 container.append(navbar);
 container.append(content);
 container.append(footer());
+
+const attributionsTab = document.querySelector("#attributionsLink");
+attributionsTab.addEventListener("click", ()=>{
+    console.log("Attributions link clicked");
+    refreshDOM(attributions());
+})
 
 // Clear container, break line, insert navbar, section, and footer
 function refreshDOM(section){

@@ -14,14 +14,15 @@ function footer(){
     repositoryLink.classList.add("footerLink");
 
     const projectLink = document.createElement("a");
-    projectLink.href = "https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page#solutions";
+    projectLink.href = "https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page";
     projectLink.target = "_blank";
     projectLink.textContent = "Original project specifications: theodinproject.com";
     projectLink.classList.add("footerLink");
 
     const attributionsLink = document.createElement("a");
-    attributionsLink.href = "https://www.google.com/";
-    attributionsLink.target = "_blank";
+    attributionsLink.id = "attributionsLink";
+    attributionsLink.href = "#navbar";
+    /*attributionsLink.target = "_blank"; */
     attributionsLink.textContent = "Assets attributions";
     attributionsLink.classList.add("footerLink");
 
