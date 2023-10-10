@@ -4,7 +4,7 @@
     font-weight: 400;
     font-style: normal;
 } */
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=League+Spartan:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Koulen&family=League+Spartan:wght@400;700&family=Leckerli+One&display=swap');
 
 html, body{
     text-align: center;
@@ -127,21 +127,62 @@ html, body{
     font-weight: bold;
 }
 
+.menuSection{
+    font-family: "Leckerli One";
+    font-size: 64px;
+               /* offset-x | offset-y | blur-radius |      color */
+    text-shadow: -3px        2px         0px         rgba(223, 161, 0, 1);
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: start;
+    text-decoration: underline;
+    color: red; 
+
+}
+
+.menuItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemName {
+    /*background-color: green;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px;
+}
+
+.itemName:after {
+    content: " ........................................................................................................................................................................................................................................................................................."
+}
+
+.precio {
+    /*background-color: red;*/
+    flex-shrink: 0;
+}
+
+.sectionContainer{
+    margin-bottom: 15px;
+}
+.menuText{
+    color: rgba(255, 0, 0, 1);
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    letter-spacing: 5px;
+            /* offset-x | offset-y | blur-radius |      color */
+    text-shadow: -3px        2px         0px         rgba(223, 161, 0, 1);
+}
+
+.itemPrice::before{
+    content: "$";
+}
 
 #contactContainer{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
-/*
-button{
-    background-color: #D9D9D9;
-    padding: 5px 15px;
-    border: 1px solid black;
-    border: none;
-    &:hover{
-        background-color: #e6e6e6;
-    }
-}
-*/
+
+
 #footer {
     background-color: #D9D9D9;
     color: black;
