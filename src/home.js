@@ -7,7 +7,7 @@ function home(){
 
     //header
     const header = document.createElement("h1");
-    header.textContent = "Tito's Tacos & Tamales";
+    header.textContent = "Tito's Tacos & Tortas";
     header.classList.add("sectionHeader"); 
 
     //card1 container
