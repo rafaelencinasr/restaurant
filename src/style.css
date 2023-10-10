@@ -225,7 +225,7 @@ html, body{
     font-family: 'League Spartan', sans-serif; 
 }
 
-.footerLink, .attributionLink{
+.footerLink, .attributionLink,  #logo{
     
     color: black;
     text-decoration: none;

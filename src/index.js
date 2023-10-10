@@ -18,6 +18,11 @@ const logoNavbar = document.createElement("div");
 logoNavbar.id = "logo";
 logoNavbar.textContent = "T's T&T";
 
+logoNavbar.addEventListener("click", ()=>{
+    console.log("Clicked on logo");
+    refreshDOM(home());
+})
+
 const rightContainer = document.createElement("ul");
 
 const homeTab = document.createElement("li");
